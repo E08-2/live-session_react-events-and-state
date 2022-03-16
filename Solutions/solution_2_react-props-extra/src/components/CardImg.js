@@ -2,7 +2,7 @@ import React from "react";
 
 const CardImg = props => {
     return (
-        <img className="card-img-top" src={ props.image } alt={`${props.cardTitle} singing`} />
+        <img className="card-img-top" src={ props.propImage } alt={`${props.propTitle2} singing`} />
     );
 }
 

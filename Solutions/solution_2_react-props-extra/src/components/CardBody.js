@@ -1,11 +1,14 @@
 import React from "react";
+import CardTitle from "./CardTitle";
+import CardText from "./CardText";
+import CardButton from "./CardButton";
 
 const CardBody = props => {
     return (
         <div className="card-body">
-            <h5 className="card-title">{props.cardTitle}</h5>
-            <p className="card-text">{props.cardDescription}</p>
-            <a href={props.button.url} className="btn btn-primary">{props.button.label}</a>
+            <CardTitle propTitle={props.propTitle} />
+            <CardText propDescription={props.propDescription} />
+            <CardButton propButton={props.propButton} />
         </div>
     )
 }

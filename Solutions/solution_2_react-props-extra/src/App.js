@@ -42,24 +42,24 @@ const App = () => {
 		// The parent can pass props containing data down to the child
 		<>
 			<BootstrapCard
-				image={data[0].image}
-				cardTitle={data[0].cardTitle}
-				cardDescription={data[0].cardDescription}
-				button={data[0].button}
+				propImage={data[0].image}
+				propTitle={data[0].cardTitle}	// ? propTitle Step 1 --> "Bob Dylan"
+				propDescription={data[0].cardDescription}
+				propButton={data[0].button}	// Object!
 			/>
 
 			<BootstrapCard
-				image={data[1].image}
-				cardTitle={data[1].cardTitle}
-				cardDescription={data[1].cardDescription}
-				button={data[1].button}
+				propImage={data[1].image}
+				propTitle={data[1].cardTitle}
+				propDescription={data[1].cardDescription}
+				propButton={data[1].button}	// Object!
 			/>
 
 			<BootstrapCard
-				image={data[2].image}
-				cardTitle={data[2].cardTitle}
-				cardDescription={data[2].cardDescription}
-				button={data[2].button}
+				propImage={data[2].image}
+				propTitle={data[2].cardTitle}
+				propDescription={data[2].cardDescription}
+				propButton={data[2].button}	// Object!
 			/>
 		</>
 	);

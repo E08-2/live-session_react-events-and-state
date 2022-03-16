@@ -6,11 +6,14 @@ import CardBody from "./CardBody";
 const BootstrapCard = props => {
 	return (
 		<div className="card m-5" style={ {width: "18rem"} }>
-			<CardImg image={props.image} />
+			<CardImg 
+				propImage={props.propImage} 	// props.propImage --> the data we received from App.js in the "propsImage" prop!
+				propTitle2={props.propTitle}	// ? propTitle Step 2A - pass "Bob Dylan" to the <CardImg /> 
+			/>
 			<CardBody 
-				cardTitle={props.cardTitle}
-				cardDescription={props.cardDescription}
-				button={props.button}
+				propTitle={props.propTitle}	   // ? propTitle Step 2B - pass "Bob Dylan" to the <CardBody />
+				propDescription={props.propDescription}
+				propButton={props.propButton}
 			/>
 		</div>
 	);
